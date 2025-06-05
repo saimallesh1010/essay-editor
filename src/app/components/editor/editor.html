@@ -1,0 +1,9 @@
+<div class="editor-wrapper">
+  <h2>Essay Editor</h2>
+  <div
+    class="essay-box"
+    contenteditable="true"
+    [innerHTML]="highlightedEssay"
+    (input)="onEssayInput($event)"
+  ></div>
+</div>

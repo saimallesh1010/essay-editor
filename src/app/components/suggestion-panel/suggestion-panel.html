@@ -1,0 +1,21 @@
+<div class="panel-wrapper">
+  <h2>Flag & Suggest Panel</h2>
+
+  <input
+    type="text"
+    [(ngModel)]="flaggedSentence"
+    (ngModelChange)="onFlagChange()"
+    placeholder="Sentence to flag"
+    class="input-box"
+  />
+
+  <input
+    type="text"
+    [(ngModel)]="suggestedSentence"
+    placeholder="Suggested improvement"
+    class="input-box"
+  />
+
+  <button (click)="applySuggestion()" class="apply-btn">Apply</button>
+  <button (click)="triggerUndo()" class="undo-btn">Undo</button>
+</div>

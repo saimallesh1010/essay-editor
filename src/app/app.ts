@@ -1,11 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { EditorComponent } from './components/editor/editor';
+import { SuggestionPanelComponent } from './components/suggestion-panel/suggestion-panel';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, EditorComponent, SuggestionPanelComponent],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss']
 })
-export class App {
-  protected title = 'essay-editor';
+export class AppComponent {
+  flaggedSentence: string = '';
+
+  @ViewChild(EditorComponent) editor?: EditorComponent;
+
+  updateFlagged(sentence: string) {
+    this.flaggedSentence = sentence;
+  }
+
+  applySuggestion(data: { flagged: string; suggestion: string }) {
+    this.editor?.applySuggestion(data.flagged, data.suggestion);
+  }
+
+  undoLast() {
+    this.editor?.undoLastChange();
+  }
 }
