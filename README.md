@@ -1,5 +1,39 @@
-<<<<<<< HEAD
-# EssayEditor
+
+# ✍️ Essay Editor – Angular App
+
+An interactive web-based essay editor that allows users to improve writing by flagging sentences and suggesting alternatives. Built with Angular, this app highlights flagged text in real time and lets users apply improvements with a single click.
+
+---
+
+## 🌟 Features
+
+- 📝 Essay writing panel with real-time input
+- 🔍 Highlight exact matches of flagged sentences instantly
+- 💡 Suggest improvements for flagged content
+- ✅ Apply all replacements with one button
+- ↩️ Undo the last change (bonus)
+- 📱 Fully responsive layout (desktop/mobile)
+- 🧠 Shared state management between components
+- 🧪 Basic unit testing implemented
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Angular (v20+)
+- **Language**: TypeScript
+- **Styling**: SCSS
+- **Testing**: Karma & Jasmine
+
+---
+
+```markdown
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/saimallesh1010/essay-editor.git
+cd essay-editor
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
@@ -53,11 +87,6 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# essay-editor
->>>>>>> e4fbca6b376d9663c24b9a6578012ff0e9e0c415
+
