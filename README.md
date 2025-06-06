@@ -86,6 +86,8 @@ For end-to-end (e2e) testing, run:
 ```bash
 ng e2e
 ```
+### 🌍 Live Demo
+[Essay Editor Live](https://saimallesh1010.github.io/essay-editor/)
 
 
 
