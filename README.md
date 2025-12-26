@@ -26,6 +26,13 @@ An interactive web-based essay editor that allows users to improve writing by fl
 - **Testing**: Karma & Jasmine
 
 ---
+## 🧠 Engineering Highlights
+
+- Designed a component-driven Angular architecture with shared state management
+- Implemented real-time text highlighting using efficient string matching logic
+- Built a clean replacement workflow with undo support for user edits
+- Focused on maintainable UI logic and separation of concerns
+- Applied basic unit testing to validate core editor behavior
 
 ```markdown
 ## 🚀 Getting Started
